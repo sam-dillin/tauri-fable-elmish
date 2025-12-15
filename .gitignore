@@ -24,3 +24,4 @@ dist-ssr
 .fake
 .paket
 paket-files
+*fable-temp.csproj

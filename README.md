@@ -15,7 +15,7 @@ To learn more about the structure of Elmish within this template see [elmish-sto
 
 ### Dependencies
 
--   [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+-   [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
     -   [Fable](https://fable.io)
     -   [Paket](https://fsprojects.github.io/Paket/)
 -   [Node.js (20.x LTS)](https://nodejs.org/en)

@@ -1,6 +1,6 @@
 {
   "build": {
-    "beforeDevCommand": "pnpm dev",
+    "beforeDevCommand": "pnpm run:dev",
     "beforeBuildCommand": "pnpm build",
     "frontendDist": "../dist",
     "devUrl": "http://localhost:1420"
@@ -18,7 +18,7 @@
   },
   "productName": "tauri-fable-elmish",
   "mainBinaryName": "tauri-fable-elmish",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "identifier": "com.tauri.dev",
   "plugins": {},
   "app": {

@@ -11,7 +11,7 @@ open Fable.Core.JsInterop
 importSideEffects "./styles.css"
 
 ReactDomClient.createRoot(document.getElementById("root")).render(
-    React.strictMode [
+    React.StrictMode [
         App.AppComponent()
         |> Util.toReact
     ]

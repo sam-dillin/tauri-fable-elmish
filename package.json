@@ -1,29 +1,33 @@
 {
   "name": "tauri-fable-elmish",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
-  "packageManager": "pnpm@8.15.3+sha256.fc4a49bd609550a41e14d20efbce802a4b892aa4cac877322de2f0924f122991",
+  "packageManager": "pnpm@8.15.3",
   "engines": {
     "node": ">=20",
     "pnpm": ">=8"
   },
   "scripts": {
     "dev": "dotnet fable watch ./src -e .jsx --sourceMaps --configuration Debug --run vite --mode development",
+    "run:dev": "concurrently \"pnpm fable:dev\" \"pnpm vite:dev\"",
+    "fable:dev": "dotnet fable watch ./src -e .jsx --sourceMaps --configuration Debug",
+    "vite:dev": "vite --mode development",
     "build": "dotnet fable ./src -e .jsx --noCache --configuration Release --define FABLE_COMPILER --run vite build --mode production",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri dev"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/api": "^2.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "use-sync-external-store": "^1.2.0"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^2.8.4",
-    "@vitejs/plugin-react": "^5.0.4",
+    "@tauri-apps/cli": "^2.9.6",
+    "@vitejs/plugin-react": "^5.1.2",
+    "concurrently": "^9.2.1",
     "remotedev": "^0.2.9",
-    "vite": "^7.1.9"
+    "vite": "^7.3.0"
   }
 }
